@@ -13,6 +13,10 @@ function changePageStyle(colorVar){
         objCss.setAttribute("href","./css/emsg_white.css");
         objHd.setAttribute("src","./image/logoft.png");
         objFt.setAttribute("src","./image/logo.png");
+    }else if (colorVar == 4){ // white
+        objCss.setAttribute("href","./css/emsg_bluegreen.css");
+        objHd.setAttribute("src","./image/logoft_bluegreen.png");
+        objFt.setAttribute("src","./image/logo_bluegreen.png"); 
     }else{ //green
         objCss.setAttribute("href","./css/emsg_green.css");
         objHd.setAttribute("src","./image/logoft_color_green.png");
