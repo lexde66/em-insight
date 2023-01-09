@@ -1,0 +1,269 @@
+/* clear the original pattern */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+ul{
+    list-style: none;
+  }
+
+a {
+    text-decoration: none;
+}
+
+.clearfix:before,.clearfix::after{
+    content: "";
+    display: table;
+}
+
+.clearfix:after{
+    content: ''; 
+    display: block; 
+    clear: both;
+}
+
+/*Load font*/
+@font-face{
+    font-family: Arial Round Bold;
+    src:url(../font/arial_round_bold.ttf)
+}
+
+@font-face {
+    font-family: Arial Round Std;
+    src: url(../font/arial_round_std.otf);
+}
+
+/* main site pattern */
+body{
+    background-color: white;
+}
+
+.fixhead{
+    height: 120px;
+    background-color: #b0e0e6;
+    border-bottom: 3px solid #edc3a9;
+    /* position: fixed; */
+}
+
+.header {
+    height: 118px;
+    background-color: #b0e0e6;
+    /* position: fixed; */
+    margin-top: 30px;
+    margin-bottom:30px;
+}
+
+.wrapper {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+h1 {
+    float: left;
+    margin-top: 30px;
+    margin-left: 50px;
+}
+
+.nav{
+    float: left;
+    margin-left: 40px;
+    height: 40px;
+    margin-top: 40px;
+
+    font-family: Arial Round Bold;
+    /* margin-bottom:30px; */
+    /* background-color: green; */
+}
+
+.nav li{
+    /* float: left; */
+    position: relative;
+    margin-right: 30px; 
+    display: inline-block;
+}
+
+.nav li a{
+    display: block;
+    padding: 0 10px;
+    height: 40px;
+    line-height: 40px;
+    /* border-bottom: 2px solid gray; */
+
+    font-size: 18px;
+    color: #55696c;
+}
+
+.nav li a:hover{
+    border-bottom: 4px solid #edc3a9;
+}
+
+/* banner area */
+.banner{
+    height: 500px;
+    background-color: black;
+}
+
+.banner .wrapper{
+    height: 500px;
+    background-image: url(../image/ban_mainsite.png);
+}
+
+/* float text on banner */
+.banner .mid{
+    float:right;
+    margin-top: 50px;
+    margin-right: 100px;
+    width: 350px;
+    height: 400px;
+    background-color: rgba(255,255,255,0.7);
+
+    /* for the text in the float block */
+    padding: 20px;
+    line-height: 40px; 
+}
+
+.banner .mid h2{
+    height: 40px;
+    font-size: 24px ;
+    font-style: italic; 
+    color: #3f3f3f;
+}
+
+.banner .mid .banTextMain{
+    font-style: italic;  
+}
+
+/* main site content */
+.mainStCont{
+    width: 900px;
+    margin: 0px auto;
+}
+
+.mainStCont .msTitle{
+    height: 60px;
+    font-size: 48px ;
+    float: left;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    margin-left: 180px;
+    
+    font-family: Arial Round Bold;
+    color:#008899
+    /* background-color: white; */
+}
+
+.mainStCont .msCont{
+    height: 150px;
+    font-size: 24px ;
+    margin-top: 90px;
+    margin-bottom: 30px;
+    margin-left: 200px;  
+    
+    font-family: Arial Round Std;
+    /* line-height: 40px; */
+}
+
+/* main site content blocks */
+.mainStCont .msConBlk li{
+    float: left;
+    margin-top: 20px;
+    margin-right: 12px;
+    width: 320px;
+    height: 450px;
+    background-color: #d4d4d4; 
+}
+
+.mainStCont .msConBlk li img{
+    width: 320px;
+    height: 400px;
+}
+
+.mainStCont .msConBlk li p{
+    padding-left: 15px;
+}
+
+/* main site content image bar */
+.mainStCont .msConImgbar{
+    float: left;
+    margin-left: 50px;   
+}
+
+/* foot area */
+.footer{
+    padding:30px;
+    margin-top: 30px;
+    height: 300px;
+    background-color: #b0e0e6;
+
+    line-height: 25px;
+    font-family: Arial Round Bold;
+    color: #55696c;
+
+    border-top: 3px solid #edc3a9;
+}
+
+.footer .msFtLeft{
+    float:left;
+    margin-left: 120px;
+}
+
+.footer .msFtLeft .msFtLeftTxt{
+     margin-left: 20px;
+}
+
+.footer .msFtMid{
+    float:left;
+    margin-left: 80px;
+    text-align:center;
+}
+
+.footer .msFtRight{
+    float: left;
+    margin-left: 70px;
+}
+
+.footer .msFtRight li a{
+    color: #55696c;
+}
+
+.footer .msFtRight li a:hover{
+    border-bottom: 2px solid #55696c;
+}
+
+/* menu setting */
+.nav li .dp{
+    position: relative;
+    display: inline-block;
+}
+
+.nav li .dpItems {
+    display: none; 
+    position: absolute;
+    background-color: white;
+    width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.nav li .dpItems a {
+    color: #55696c;
+    padding: 12px 12px;
+    display: block;
+    border-bottom: 2px solid white;
+
+    font-size: 14px;
+    line-height: 14px;
+}
+
+.nav li .dpItems a:hover {background-color: #bfbfbf}
+
+.nav li .dp:hover .dpItems {
+    display: block;
+}
+
+
